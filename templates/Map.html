@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_3daf36f56bee4d4e99a09668db0bffca {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_3daf36f56bee4d4e99a09668db0bffca" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_3daf36f56bee4d4e99a09668db0bffca = L.map(
+        'map_3daf36f56bee4d4e99a09668db0bffca', {
+        center: [0, 0],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_41117c7407884d98b24f23a3f4764731 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_3daf36f56bee4d4e99a09668db0bffca);
+    
+        var marker_e4e299eb480f4b668f7e5b478c0c2f25 = L.marker(
+            [44.8178131, 20.4568974],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_3daf36f56bee4d4e99a09668db0bffca);
+        
+    
+
+                var icon_96bebd0e152848b794eb0d5b9de8ae3e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e4e299eb480f4b668f7e5b478c0c2f25.setIcon(icon_96bebd0e152848b794eb0d5b9de8ae3e);
+            
+    
+            var popup_ca6db244e5504cc687681349695f4e8a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_455d815baf284ad3986de8ffa741f6ad = $(`<div id="html_455d815baf284ad3986de8ffa741f6ad" style="width: 100.0%; height: 100.0%;">avucic, Србија, Београд</div>`)[0];
+                popup_ca6db244e5504cc687681349695f4e8a.setContent(html_455d815baf284ad3986de8ffa741f6ad);
+            
+
+            marker_e4e299eb480f4b668f7e5b478c0c2f25.bindPopup(popup_ca6db244e5504cc687681349695f4e8a)
+            ;
+
+            
+        
+    
+        var marker_eb2afff4de154cd0af7a820ba20d37db = L.marker(
+            [52.7861111, 20.6],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_3daf36f56bee4d4e99a09668db0bffca);
+        
+    
+
+                var icon_aa9804ab7a604e0aa008e579296940f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eb2afff4de154cd0af7a820ba20d37db.setIcon(icon_aa9804ab7a604e0aa008e579296940f0);
+            
+    
+            var popup_cf61e9fdfdde4bceb95b3602241c9959 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_21ee147a908f41db86979eb2be7d6c33 = $(`<div id="html_21ee147a908f41db86979eb2be7d6c33" style="width: 100.0%; height: 100.0%;">AndrzejDuda, Kraków / Warszawa</div>`)[0];
+                popup_cf61e9fdfdde4bceb95b3602241c9959.setContent(html_21ee147a908f41db86979eb2be7d6c33);
+            
+
+            marker_eb2afff4de154cd0af7a820ba20d37db.bindPopup(popup_cf61e9fdfdde4bceb95b3602241c9959)
+            ;
+
+            
+        
+    
+        var marker_21caf63d37b2444587684106843c13c4 = L.marker(
+            [48.2083537, 16.3725042],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_3daf36f56bee4d4e99a09668db0bffca);
+        
+    
+
+                var icon_7b34ffeb586542e5846dc19c279cba83 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_21caf63d37b2444587684106843c13c4.setIcon(icon_7b34ffeb586542e5846dc19c279cba83);
+            
+    
+            var popup_70b0b24041064450a400b558ab03e5f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_87e11e4405a8463e873a296560f4930c = $(`<div id="html_87e11e4405a8463e873a296560f4930c" style="width: 100.0%; height: 100.0%;">sebastiankurz, Vienna</div>`)[0];
+                popup_70b0b24041064450a400b558ab03e5f0.setContent(html_87e11e4405a8463e873a296560f4930c);
+            
+
+            marker_21caf63d37b2444587684106843c13c4.bindPopup(popup_70b0b24041064450a400b558ab03e5f0)
+            ;
+
+            
+        
+</script>
